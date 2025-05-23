@@ -189,3 +189,27 @@ body {
   transform: scale(1.2);
   color: #e0488b;
 }
+
+.music-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+#music-toggle {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+  background: #fdd6e7;
+  color: #45a3cc;
+  border: 3px solid #B27B50;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#music-toggle:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}

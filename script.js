@@ -112,4 +112,23 @@ document.getElementById("add-task").addEventListener("click", () => {
 setMode("pomodoro");
 updateDisplay();
 
+window.addEventListener("DOMContentLoaded", () => {
+  const musicBtn = document.getElementById("music-toggle");
+  const ytMusic = document.getElementById("yt-music");
+  let musicOn = false;
+
+  musicBtn.addEventListener("click", () => {
+    if (!musicOn) {
+      ytMusic.src = "https://www.youtube.com/embed/z7S9wIJ8mT8?autoplay=1&loop=1&playlist=z7S9wIJ8mT8";
+      ytMusic.style.display = "none";
+      musicBtn.textContent = "🔇 MUSIC OFF";
+    } else {
+      ytMusic.src = "";
+      musicBtn.textContent = "🎵 MUSIC ON";
+    }
+    musicOn = !musicOn;
+  });
+});
+
+
 
