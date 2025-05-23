@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Luckiest Guy', cursive;
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+/* Shared white box structure */
+.section-box {
+  background: white;
+  border: 4px solid #B27B50;
+  border-radius: 10px;
+  padding: 0;
+  width: 45%;
+  min-width: 350px;
+  position: relative;
+  box-shadow: 4px 4px 0 #B27B50;
+}
+
+/* Blue title bar perfectly aligned at the top */
+.title {
+  background: #ade0f9;
+  border-bottom: 4px solid #B27B50;
+  color: #B27B50;
+  font-size: 40px;
+  margin: 0;
+  padding: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+/* Content area inside white box */
+.timer-section,
+.task-section {
+  padding: 24px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+/* Mode buttons */
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.mode-btn {
+  background: #D9F2FF;
+  border: 3px solid #96C6E8;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #5a87a0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.mode-btn:hover,
+.start-btn:hover{
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.add-task:hover {
+  transform: scale(1.03);
+  color: #fbb6d4; 
+  transition: all 0.2s ease;
+}
+
+.mode-btn.active {
+  background: #cae3f8;
+  box-shadow: inset 0 0 5px #add5ea;
+}
+
+/* Timer display */
+.time-display {
+  font-size: 80px;
+  text-align: center;
+  color: #B27B50;
+  margin-bottom: 40px;
+}
+
+/* Start/pause button */
+.start-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 36px;
+  font-size: 25px;
+  background: #fdd6e7;
+  color: #45a3cc;
+  border: 3px solid #B27B50;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+/* Add task */
+.add-task {
+  font-size: 25px;
+  color: #f58ab0;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+/* Task list */
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#task-list li {
+  background: #f0f8ff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 3px solid #B27B50;
+  color: #45a3cc;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-text {
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+/* Images */
+.cinnamo {
+  position: absolute;
+}
+
+.cinnamo.plane {
+  width: 200px;
+  position: absolute;
+  top: 350px;   
+  right: -70px; 
+  z-index: 5;
+}
+
+
+.cinnamo.corner.left {
+  width: 180px;
+  bottom: 5px;
+  left: 5px;
+}
+
+.cinnamo.corner.right {
+  width: 180px;
+  position: absolute;
+  bottom: -70px; 
+  right: -70px;  
+  z-index: 5;
+}
+
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #f58ab0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  color: #e0488b;
+}
